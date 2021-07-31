@@ -1,0 +1,124 @@
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+
+        &__logo {
+            margin-bottom:  18px;
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__link{
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .hero {
+        margin-left: 30%;
+    }
+
+    .skills {
+        &__stats-container {
+            max-width: 100%;
+            padding-right: 0;
+        }
+
+        &__image {
+            position: unset;
+            height: 100vw;
+            width: 100%;
+        }
+    }
+
+    .info {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+        }
+    }
+
+    .gallery {
+        &__group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item-one:nth-child(3) {
+            background-color: #ddd;
+        }
+
+        &__item-one:nth-child(4) {
+            background-color: #787878;
+        }
+
+        &__item-two:nth-child(1) {
+            background-color: #787878;
+        }
+
+        &__item-two:nth-child(2) {
+            background-color: #ddd;
+        }
+
+        &__item:hover {
+            background-color: #141414;
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .info {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+    }
+
+    .info-item {
+        max-width: 220px;
+        width: 100%;
+    }
+
+    .gallery {
+        &__group {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item-one:nth-child(odd) {
+            background-color: #787878;
+        }
+
+        &__item-one:nth-child(4) {
+            background-color: #ddd;
+        }
+
+        &__item-two:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        &__item-two:nth-child(3) {
+            background-color: #787878;
+        }
+
+        &__item:hover {
+            background-color: #141414;
+            transition: .5s;
+        }
+    }
+}
